@@ -1,20 +1,20 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Form from './components/form/form';
 import ShowFormOutput from './components/showFormOutput/showFormOutput';
-
+import Wrapper from './components/helpers/Wrapper';
 
 function App() {
   const [userInput, setUserInput] = useState(null);
-  // get props and set it to userInput
-  const useData = (userInput) => {
-    setUserInput(userInput);
-  }
-  console.log("usedata", userInput);
+  
+  const handleData = (data) => {
+    setUserInput(data); 
+  };
+
   return (
-    <div className='main'>
-      <Form getData={useData}/>
-      <ShowFormOutput data={userInput}/>
-    </div>
+    <Wrapper>
+      <Form getData={handleData} />
+      <ShowFormOutput data={userInput} />
+    </Wrapper>
   );
 }
 

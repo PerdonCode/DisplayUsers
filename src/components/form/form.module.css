@@ -4,10 +4,17 @@
     background-color: aliceblue;
     border-radius: 15px;
     padding-left: 20px;
+    
+}
+.container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form{
     background-color: aliceblue;
+    
 }
 
 .form p{
@@ -24,3 +31,31 @@
    margin-top: 10px;
    margin-bottom: 10px;
 }
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .closeButton {
+    background-color: #ccc;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
